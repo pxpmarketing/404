@@ -1,14 +1,12 @@
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://opengraph.org/schema/"> <head>
         
-<meta property="og:title" content="New! PET Admissions: From inquiry through enrollment, PET96 transforms your entire admissions and registration process."/>
-<meta property="fb:page_id" content="43929265776" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-<meta name="referrer" content="origin" />         
+<meta property="og:title" content="New! PET Admissions: From inquiry through enrollment, PET96 transforms your entire admissions and registration process.">
+<meta property="fb:page_id" content="43929265776">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="referrer" content="origin">         
 <meta charset="utf-8"> 
-<!--<meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
-<meta http-equiv="Content-Type" content="text/html charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
 <!--[if gte mso 9]><xml>
 <o:OfficeDocumentSettings>
 <o:AllowPNG/>
@@ -68,7 +66,7 @@
 
 		
 	</style>
-		<style>
+		<style type="text/css">
 		
 			/* -------------------------------------- */
 
@@ -76,7 +74,7 @@
 				counter-reset: li;
 				list-style: none;
 				*list-style: decimal;
-				font: 15px 'Open Sans', 'Helvetica', 'Arial', 'sans-serif';
+				font: 15px 'trebuchet MS', 'lucida sans';
 				padding: 0;
 				margin-bottom: 1em;
 				text-shadow: 0 1px 0 rgba(255,255,255,.5);
@@ -114,14 +112,7 @@
 				background: #eee;
 			}
 
-			.rounded-list a:hover:before{
-				-moz-transform: rotate(360deg);
-			  	-webkit-transform: rotate(360deg);
-			    -moz-transform: rotate(360deg);
-			    -ms-transform: rotate(360deg);
-			    -o-transform: rotate(360deg);
-			    transform: rotate(360deg);	
-			}
+
 
 			.rounded-list a:before{
 				content: counter(li);
@@ -263,7 +254,7 @@
         img{
           width:auto !important;
           max-width:100% !important;
-       
+		  height:auto !important
         }
         .tableStack{ width:100% !important; }
         table.buttonStack { margin-top: 10px !important; }
@@ -334,97 +325,8 @@ padding-right:2% !important;
 td.outlookFloat{margin-left:40px;padding-right:0px !important;}
 </style>
 <![endif]--> 
-        <script type="text/javascript">
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-            ga('create', 'UA-329148-88', {'allowLinker': true});
-            ga('set', 'hostname', '.campaign-archive.com');
-            ga('send', 'pageview');
-        </script>        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> 
-                <script src="//us5.campaign-archive.com/js/mailchimp/fancyzoom.mc.js"></script> <script type="text/javascript">
-    function updateFacebookCommentsCount(num) {
-        $('#campaign-fb-comments-btn span').fadeOut().html(num).fadeIn();
-    }
-</script> <script type="text/javascript">
-    function incrementFacebookLikeCount() {
-        var current = parseInt($('#campaign-fb-like-btn span').html());
-        $('#campaign-fb-like-btn span').fadeOut().html(++current).fadeIn();
-    }
-
-    function getUrlParams(str) {
-        var vars = {}, hash;
-        if (!str) return vars;
-        var hashes = str.slice(str.indexOf('?') + 1).split('&');
-        for(var i = 0; i < hashes.length; i++) {
-            hash = hashes[i].split('=');
-            vars[hash[0]] = hash[1];
-        }
-        return vars;
-    }
-    
-    function setupSocialSharingStuffs() {
-        var numSocialElems = $('a[rel=socialproxy]').length;
-        var numSocialInitialized = 0;
-        var urlParams = getUrlParams(window.document.location.href);
-        var paramsToCopy = {'e':true, 'eo':true};
-        $('a[rel=socialproxy]').each(function() {
-            var href = $(this).attr('href');
-            var newHref = decodeURIComponent(href.match(/socialproxy=(.*)/)[1]);
-            // for facebook insanity to work well, it needs to all be run against just campaign-archive
-            newHref = newHref.replace(/campaign-archive(\d)/gi, 'campaign-archive');
-            var newHrefParams = getUrlParams(newHref);
-            for(var param in urlParams) {
-                if ((param in paramsToCopy) && !(param in newHrefParams)) {
-                    newHref += '&' + param + '=' + urlParams[param];
-                }
-            }
-            $(this).attr('href', newHref);
-            if (href.indexOf('facebook-comment') !== -1) {
-                $(this).fancyZoom({"zoom_id": "social-proxy", "width":620, "height":450, "iframe_height": 450});
-            } else {
-                $(this).fancyZoom({"zoom_id": "social-proxy", "width":500, "height":200, "iframe_height": 500});
-            }
-            numSocialInitialized++;
-                    });
-    }
-	if (window.top!=window.self){
-        $(function() {
-          var iframeOffset = $("#archive", window.parent.document).offset();
-          $("a").each(function () {
-              var link = $(this);
-              var href = link.attr("href");
-              if (href && href[0] == "#") {
-                  var name = href.substring(1);
-                  $(this).click(function () {
-                      var nameElement = $("[name='" + name + "']");
-                      var idElement = $("#" + name);
-                      var element = null;
-                      if (nameElement.length > 0) {
-                          element = nameElement;
-                      } else if (idElement.length > 0) {
-                          element = idElement;
-                      }
-         
-                      if (element) {
-                          var offset = element.offset();
-                          var height = element.height();
-                          //3 is totally arbitrary, but seems to work best.
-                          window.parent.scrollTo(offset.left, (offset.top + iframeOffset.top - (height*3)) );
-                      }
-         
-                      return false;
-                  });
-              }
-          });
-        });
-    }
-</script>  <script type="text/javascript">
-            $(document).ready(function() {
-                setupSocialSharingStuffs();
-            });
-        </script>
+                 
+                    
                 <style type="text/css">
             /* Facebook/Google+ Modals */
             #social-proxy { background:#fff; -webkit-box-shadow: 4px 4px 8px 2px rgba(0,0,0,.2); box-shadow: 4px 4px 8px 2px rgba(0,0,0,.2); padding-bottom:35px; z-index:1000; }
@@ -463,14 +365,7 @@ td.outlookFloat{margin-left:40px;padding-right:0px !important;}
 <![endif]--> 
 <tbody> 
 <tr style="white-space:nowrap; background-color:#ffffff;"> 
-
-<tbody><tr>
-<td  style="border-top:10px solid #2170d2;white-space:normal;padding-top:0px;padding-left:40px;padding-right:40px; background-color:#ffffff;"> 
-</td></tr>
-</tbody>
-
-<td  style="border-top:5px solid #f18a26;white-space:normal;padding-top:25px;padding-left:40px;padding-bottom:25px;padding-right:40px; background-color:#ffffff;"> 
-
+<td class="stack" style="border-top:10px solid #f18a26;white-space:normal;padding-top:25px;padding-left:40px;padding-bottom:25px;padding-right:40px; background-color:#ffffff;"> 
 <!--Left--> 
 <table class="tableStack" role="presentation" width="48%" border="0" cellpadding="0" cellspacing="0" align="left"> 
 <tbody> 
@@ -545,7 +440,7 @@ td.outlookFloat{margin-left:40px;padding-right:0px !important;}
 <tr style="white-space:nowrap; background-color:#ffffff;"> 
 <td align="center" style="background-color:#ffffff;"> 
 <div class="mktoImg" id="bannerImage01279e3d28-e093-4ea8-8145-1e77cf29ff8f" mktolockimgsize="true"> 
-<a href="https://www.pet96.com/admissions/" target="_blank"><img src="https://www.pet96.com/wp-content/uploads/2018/03/pet-ad-348.png"  alt="PET96" style="display:block; border-style: none !important; padding-bottom:10px;"></a>
+<a href="https://www.pet96.com/admissions/" target="_blank"><img src="https://www.pet96.com/wp-content/uploads/2018/03/pet-ad-348.png" alt="PET96" style="display:block; border-style: none !important; padding-bottom:10px;"></a>
 
 
 
@@ -556,13 +451,14 @@ td.outlookFloat{margin-left:40px;padding-right:0px !important;}
 <tr class="mktoModule" id="fullTexte986d75b-4ef9-4b7d-b41f-dbfbb3964d4a"> 
 <td> 
 <!--Full Text--> 
-<a href="https://www.pet96.com/admissions">
+
 <table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" style="min-width:100%;"> 
 <!--[if gte mso 9]>
 <tr>
 <td>
 <table role="presentation" width="650" border="0" cellpadding="0" cellspacing="0" style="width:650px;">
 <![endif]--> 
+
 <tbody> 
 <tr style="white-space:nowrap; background-color:#ffffff;"> 
 <td class="stack" style="color:#ffffff;text-align:left;white-space:normal;font-family: Open Sans, Helvetica, Arial, sans-serif; font-size:18px;line-height:29px; padding-left:40px; padding-right:40px; background-color:#2170d2; font-weight:lighter;"> 
@@ -573,7 +469,7 @@ td.outlookFloat{margin-left:40px;padding-right:0px !important;}
 <table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0"> 
 
 </table> 
-<!--/Full Text--> </td> 
+<!--/Full Text--> </div></td> 
 </tr>
 <tr class="mktoModule desktopPad" id="spacerModulea2215577-1e35-46f0-bba1-87eb07af2bc2"> 
 <td> 
@@ -612,7 +508,7 @@ td.outlookFloat{margin-left:40px;padding-right:0px !important;}
 <td class="stack" style="text-align:left;white-space:normal;background-color:#2170d2; padding-left:40px; padding-right:40px;"> 
 <!--Button--> 
 <center>
-<table role="presentation" class="button" border="0" cellpadding="0" cellspacing="0" bgcolor="#01a23c style="border-radius:5px;border: solid #01a23c 0px;display:inline-block;"> 
+<table role="presentation" class="button" border="0" cellpadding="0" cellspacing="0" bgcolor="#01a23c style=" border-radius:5px;border:="" solid="" #01a23c="" 0px;display:inline-block;"=""> 
 <tbody> 
 <tr> 
 <td style="font-family: Open Sans, Helvetica, Arial, sans-serif; font-size:14px; color:#ffffff; padding-top:7px;padding-right:27px; padding-bottom:7px;padding-left:27px;text-align:center; "> 
@@ -631,7 +527,7 @@ td.outlookFloat{margin-left:40px;padding-right:0px !important;}
 </td>
 </tr>
 <![endif]--> 
-</tbody> 
+</tbody>
 </table> 
 <!--/Button Module--> </td> 
 </tr>
@@ -641,7 +537,7 @@ td.outlookFloat{margin-left:40px;padding-right:0px !important;}
 </tr>
 <![endif]--> 
 </tbody> 
-</table> </a>
+</table> 
 <!--/Banner Image--> </td> 
 </tr>
 
@@ -747,33 +643,7 @@ td.outlookFloat{margin-left:40px;padding-right:0px !important;}
     <li><a href="https://www.pet96.com/admissions">Paperless Admissions with easy tracking.</a></li>        
     <li><a href="https://www.pet96.com/admissions">Informative Website for your Parents, Teachers and Students to follow school’s regular updates.</a></li>        	
 </ol>
-<!--<tbody> 
-<tr> 
-<td valign="top" width="10" style="font-weight: lighter; color: #333333; font-family: Open Sans, Helvetica, Arial, sans-serif; font-size: 14px; line-height: 20px;">•</td> 
-<td valign="top" style="font-weight: lighter; color: #333333; font-family: Open Sans, Helvetica, Arial, sans-serif; font-size: 14px; line-height: 20px;">Centralize all applicant information online with interviews, payments & pupil history.
-</td> 
-</tr> 
-<tr> 
-<td valign="top" width="10" style="font-weight: lighter; color: #333333; font-family: Open Sans, Helvetica, Arial, sans-serif; font-size: 14px; line-height: 20px;">•</td> 
-<td valign="top" style="font-weight: lighter; color: #333333; font-family: Open Sans, Helvetica, Arial, sans-serif; font-size: 14px; line-height: 20px;">Monitor applications, enquiry conversion and enrolment vs. capacity in real-time.<br></td> 
-</tr> 
-<tr> 
-<td valign="top" width="10" style="font-weight: lighter; color: #333333; font-family: Open Sans, Helvetica, Arial, sans-serif; font-size: 14px; line-height: 20px;">•</td> 
-<td valign="top" style="font-weight: lighter; color: #333333; font-family: Open Sans, Helvetica, Arial, sans-serif; font-size: 14px; line-height: 20px;">Easy Import/Export Data (CSV, Excel).</td> 
-</tr> 
-<tr> 
-<td valign="top" width="10" style="font-weight: lighter; color: #333333; font-family: Open Sans, Helvetica, Arial, sans-serif; font-size: 14px; line-height: 20px;">•</td> 
-<td valign="top" style="font-weight: lighter; color: #333333; font-family: Open Sans, Helvetica, Arial, sans-serif; font-size: 14px; line-height: 20px;">Zero Admissions and Management Cost.</td> 
-</tr> 
-<tr> 
-<td valign="top" width="10" style="font-weight: lighter; color: #333333; font-family: Open Sans, Helvetica, Arial, sans-serif; font-size: 14px; line-height: 20px;">•</td> 
-<td valign="top" style="font-weight: lighter; color: #333333; font-family: Open Sans, Helvetica, Arial, sans-serif; font-size: 14px; line-height: 20px;">Paperless Admissions with easy tracking.</td> 
-</tr> 
-<tr> 
-<td valign="top" width="10" style="font-weight: lighter; color: #333333; font-family: Open Sans, Helvetica, Arial, sans-serif; font-size: 14px; line-height: 20px;">•</td> 
-<td valign="top" style="font-weight: lighter; color: #333333; font-family: Open Sans, Helvetica, Arial, sans-serif; font-size: 14px; line-height: 20px;">Informative Website for your Parents, Teachers and Students to follow school’s regular updates.</td> 
-</tr> 
-</tbody> -->
+
 </table> 
 </div> </td> 
 </tr> 
@@ -797,11 +667,18 @@ td.outlookFloat{margin-left:40px;padding-right:0px !important;}
 <table role="presentation" width="650" border="0" cellpadding="0" cellspacing="0" style="width:650px;">
 <![endif]--> 
 <tbody> 
+<tr style="white-space:nowrap; background-color:#ffffff;"> 
+<td class="stack" style="font-weight:600;color:#333333;text-align:left;white-space:normal;font-family: Open Sans, Helvetica, Arial, sans-serif; font-size:18px; line-height:24px; padding-left:40px; padding-right:40px; background-color:#ffffff;"> 
+<br><div align="center" class="mktoText" id="subheadline047514a7f3-b1c0-4fb8-9be3-26bed9ec1d6b">
+<b> Get FREE WEBSITE and ADMISSIONS MANAGER for your School.</b>
+</div> </td> 
+</tr> 
 <tr style="white-space:nowrap; background-color:#ffffff"> 
 <td class="stack" style="text-align:left;white-space:normal;background-color:#ffffff; padding-left:20px; padding-right:20px;"> 
 <!--Button--> 
-												<a href="https://www.pet96.com/admissions">
+												
 													<table width="100%" border="0" cellspacing="0" cellpadding="0">
+
 														<tr>
 															<td class="content-spacing" style="font-size:0pt; line-height:0pt; text-align:left" width="20"></td>
 															<td>
@@ -815,40 +692,21 @@ td.outlookFloat{margin-left:40px;padding-right:0px !important;}
 																			<table width="100%" border="0" cellspacing="0" cellpadding="0">
 																				<tr>
 																					<th class="column-top" style="font-size:0pt; line-height:0pt; padding:0; margin:0; font-weight:normal; vertical-align:top; Margin:0" valign="top" width="25"></th>
-																					<th class="column-top" style="font-size:0pt; line-height:0pt; padding:0; margin:0; font-weight:normal; vertical-align:top; Margin:0" valign="top" width="200" align="center">
-																						<table border="0" cellspacing="0" cellpadding="0" class="center">
-																							<tr>
-																								<td>
-																									<div class="text-4" style="color:#1e1e1e; font-family: Open Sans, Helvetica, Arial, sans-serif; min-width:auto !important; font-size:20px; font-weight:1000; line-height:30px; text-align:center">FREE WEBSITE</div>
-																									<div class="text-1" style="color:#2170d2; font-family: Open Sans, Helvetica, Arial, sans-serif; min-width:auto !important; font-size:14px; font-weight:1000; line-height:20px; text-align:center">for your School</div>
-																								</td>
-																							</tr>
-																						</table>
-																					</th>
+																				
 																					<th class="column-top" style="font-size:0pt; line-height:0pt; padding:0; margin:0; font-weight:normal; vertical-align:top; Margin:0" valign="top" width="100">
 																						<table width="100%" border="0" cellspacing="0" cellpadding="0">
 																							<tr>
 																								<td>
 																									<div style="font-size:0pt; line-height:0pt;" class="mobile-br-10"></div>
 
-																									<div class="img-center" style="font-size:0pt; line-height:0pt; text-align:center"><a href="https://www.pet96.com/admissions" target="_blank"><img src="https://www.pet96.com/wp-content/uploads/2018/03/giftbox150_33734.gif" border="0" width="96" height="70" alt="" /></a></div>
+																									<div class="img-center" style="font-size:0pt; line-height:0pt; text-align:center"><a href="https://www.pet96.com/admissions" target="_blank"><img src="https://www.pet96.com/wp-content/uploads/2018/03/giftbox150_33734.gif" border="0" width="96" height="70" alt=""></a></div>
 																									<div style="font-size:0pt; line-height:0pt;" class="mobile-br-10"></div>
 
 																								</td>
 																							</tr>
 																						</table>
 																					</th>
-																					<th class="column-top" style="font-size:0pt; line-height:0pt; padding:0; margin:0; font-weight:normal; vertical-align:top; Margin:0" valign="top" align="center">
-																						<table border="0" cellspacing="0" cellpadding="0" class="center">
-																							<tr>
-																								<td>
-																									<div class="text-4" style="color:#1e1e1e; font-family: Open Sans, Helvetica, Arial, sans-serif; min-width:auto !important; font-size:20px; font-weight:1000; line-height:30px; text-align:center">FREE ADMISSIONS</div>
-																									<div class="text-1" style="color:#2170d2; font-family: Open Sans, Helvetica, Arial, sans-serif; min-width:auto !important; font-size:14px; font-weight:1000; line-height:20px; text-align:center">Complete Admissions Manager</div>
-																								
-																								</td>
-																							</tr>
-																						</table>
-																					</th>
+
 																					<th class="column-top" style="font-size:0pt; line-height:0pt; padding:0; margin:0; font-weight:normal; vertical-align:top; Margin:0" valign="top" width="25"></th>
 																				</tr>
 																			</table>
@@ -865,12 +723,14 @@ td.outlookFloat{margin-left:40px;padding-right:0px !important;}
 															</td>
 															<td class="content-spacing" style="font-size:0pt; line-height:0pt; text-align:left" width="20"></td>
 														</tr>
+
 													</table>
-												</a>
+												
 
 
 <!--/Button--> </td> 
 </tr> 
+
 <!--[if gte mso 9]>
 </table>
 </td>
@@ -953,11 +813,9 @@ td.outlookFloat{margin-left:40px;padding-right:0px !important;}
 </table> 
 <!--/Spacer--> </td> 
 </tr>
-
 <tr class="mktoModule" id="fullText25c3e2d8-12a8-401f-ae78-acc352014c91"> 
 <td> 
 <!--Full Text--> 
-<a href="https://www.pet96.com/admissions">
 <table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" style="min-width:100%;"> 
 <!--[if gte mso 9]>
 <tr>
@@ -966,7 +824,7 @@ td.outlookFloat{margin-left:40px;padding-right:0px !important;}
 <![endif]--> 
 <tbody> 
 <tr style="white-space:nowrap; background-color:#ffffff;"> 
-<td class="stack" style="color:#333333;text-align:left;white-space:normal;font-family: Open Sans, Helvetica, Arial, sans-serif; font-size:14px;line-height:20px; padding-left:40px; padding-right:40px; background-color:#ffffff; font-weight:lighter;"> 
+<td class="stack" style="color:#000000;text-align:left;white-space:normal;font-family: Open Sans, Helvetica, Arial, sans-serif; font-size:14px;line-height:20px; font-weight:600; padding-left:40px; padding-right:40px; background-color:#ffffff;"> 
 <div class="mktoText" id="fullTextContent0525c3e2d8-12a8-401f-ae78-acc352014c91"> 
 <div style="text-align: center; font-size: 16px; line-height: 24px; margin: 0px 60px;" class="mobquote">
  <b><em><span style="color: #01a23c;">"PET96 has allowed us to automate our admissions workflow, keep all stakeholders informed, and develop a deeper understanding of student and parent needs." </span></em></b>
@@ -983,7 +841,7 @@ td.outlookFloat{margin-left:40px;padding-right:0px !important;}
 </tr>
 <![endif]--> 
 </tbody> 
-</table> </a>
+</table> 
 <!--/Full Text--> </td> 
 </tr>
 <tr class="mktoModule desktopPad" id="spacerModulee5016e66-87e7-4c25-a99a-65a4aef5ef3a"> 
@@ -1062,7 +920,6 @@ td.outlookFloat{margin-left:40px;padding-right:0px !important;}
 <tr class="mktoModule" id="subHeadlinede1e5fae-cb99-40c2-8a6a-7bb35e522f21"> 
 <td> 
 <!--Title Text--> 
-<a href="https://www.pet96.com/admissions">
 <table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" style="min-width:100%;"> 
 <!--[if gte mso 9]>
 <tr>
@@ -1076,15 +933,9 @@ td.outlookFloat{margin-left:40px;padding-right:0px !important;}
  Get Started Today with PET96 Education Tools 
 </div> </td> 
 </tr> 
-<!--[if gte mso 9]>
-</table>
-</td>
-</tr>
-<![endif]--> 
-</tbody> 
-</table> </a>
-<!--/Title Text--> </td> 
-</tr>
+<!--   =============================================================================================================  -->
+
+
 <tr class="mktoModule desktopPad" id="spacerModuleeca85c00-70f7-4b29-bd48-7eb26734f9b0"> 
 <td> 
 <!--Spacer--> 
@@ -1107,10 +958,15 @@ td.outlookFloat{margin-left:40px;padding-right:0px !important;}
 </table> 
 <!--/Spacer--> </td> 
 </tr>
+
+
+
+
+
+
 <tr class="mktoModule" id="fullTexte986d75b-4ef9-4b7d-b41f-dbfbb3964d4a"> 
 <td> 
 <!--Full Text--> 
-<a href="https://www.pet96.com/admissions">
 <table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" style="min-width:100%;"> 
 <!--[if gte mso 9]>
 <tr>
@@ -1127,7 +983,7 @@ td.outlookFloat{margin-left:40px;padding-right:0px !important;}
 <table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0"> 
 
 </table> 
-<!--/Full Text--> </td> 
+<!--/Full Text--> </div></td> 
 </tr>
 <tr class="mktoModule desktopPad" id="spacerModulea2215577-1e35-46f0-bba1-87eb07af2bc2"> 
 <td> 
@@ -1165,7 +1021,7 @@ td.outlookFloat{margin-left:40px;padding-right:0px !important;}
 <td class="stack" style="text-align:left;white-space:normal;background-color:#ffffff; padding-left:40px; padding-right:40px;"> 
 <!--Button--> 
 <center>
-<table role="presentation" class="button" border="0" cellpadding="0" cellspacing="0" bgcolor="#01a23c style="border-radius:5px;border: solid #01a23c 0px;display:inline-block;"> 
+<table role="presentation" class="button" border="0" cellpadding="0" cellspacing="0" bgcolor="#01a23c style=" border-radius:5px;border:="" solid="" #01a23c="" 0px;display:inline-block;"=""> 
 <tbody> 
 <tr> 
 <td style="font-family: Open Sans, Helvetica, Arial, sans-serif; font-size:18px; color:#ffffff; padding-top:7px;padding-right:27px; padding-bottom:7px;padding-left:27px;text-align:center; "> 
@@ -1173,9 +1029,6 @@ td.outlookFloat{margin-left:40px;padding-right:0px !important;}
 <a href="https://www.pet96.com/admissions" style="text-decoration: none; color: #ffffff;" target="_blank">GET STARTED FOR FREE</a> 
 </div> </td> 
 </tr> 
-
-
-
 </tbody> 
 </table> </center>
 <!--/Button--> </td> 
@@ -1202,6 +1055,14 @@ td.outlookFloat{margin-left:40px;padding-right:0px !important;}
 </table> 
 <!--/Button Module--> </td> 
 </tr>
+
+
+
+
+
+
+
+
 <tr class="mktoModule desktopPad" id="spacerModule84771712-a95b-4919-ad27-308e9673711f"> 
 
 <td> 
@@ -1226,39 +1087,23 @@ td.outlookFloat{margin-left:40px;padding-right:0px !important;}
 </table> 
 <!--/Spacer--> </td> 
 </tr>
+
+
+
+
+
 <tr class="mktoModule" id="persistentSpacerModulef7c9d86f-65ec-418b-a8dc-b01cb0cb916b"> 
-<td> 
-<!--Persistent Spacer--> 
-<table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" style="min-width:100%;"> 
-<!--[if gte mso 9]>
-<tr>
-<td>
-<table role="presentation" width="650" border="0" cellpadding="0" cellspacing="0" style="width:650px;">
-<![endif]--> 
-<tbody> 
-<tr style="white-space:nowrap; background-color:#ffffff;"> 
-<td height="25" style="white-space:normal;background-color:#ffffff; line-height:25px;font-size:25px;"> &nbsp; </td> 
-</tr> 
-<td style="border-top:5px solid #f18a26;white-space:normal;padding-left:40px;padding-right:40px; background-color:#ffffff;"> 
-<tbody><tr>
-<td  style="border-top:10px solid #2170d2;white-space:normal;padding-left:40px;padding-right:40px; background-color:#ffffff;"> 
-</td></tr>
-</tbody>
+<td class="stack" style="border-top:10px solid #f18a26;white-space:normal;padding-left:40px;padding-right:40px; background-color:#ffffff;"> 
 <!--[if gte mso 9]>
 </table>
 </td>
 </tr>
 <![endif]--> 
-</tbody> 
-</table> 
-<!--/Persistent Spacer--> </td> 
+</td>
 </tr>
-<tr class="mktoModule" id="persistentSpacerModulef9aa571b-4b1d-46ac-97be-7cef5c8aa824"> 
-<td> 
-<!--Persistent Spacer--> 
 
-<!--/Persistent Spacer--> </td> 
-</tr>
+
+
 <tr class="mktoModule" id="footerModule"> 
 <td> 
 <!--Footer--> 
@@ -1276,7 +1121,7 @@ td.outlookFloat{margin-left:40px;padding-right:0px !important;}
 <tbody> 
 <br>
 <tr> 
-<td class="footer" style="font-family: Open Sans, Helvetica, Arial, sans-serif; color: #8f8f8f; font-size: 13px; text-align: center;">Copyright &copy 2018 PeerXP | All rights reserved.<br> New Delhi, India<br><br> <a href="https://www.pet96.com" style="color: #8f8f8f; text-decoration: none;">www.pet96.com</a> &nbsp;</td> 
+<td class="footer" style="font-family: Open Sans, Helvetica, Arial, sans-serif; color: #8f8f8f; font-size: 13px; text-align: center;">Copyright © 2018 PeerXP | All rights reserved.<br> New Delhi, India<br><br> <a href="https://www.pet96.com" style="color: #8f8f8f; text-decoration: none;">www.pet96.com</a> &nbsp;</td> 
 </tr> 
 <tr> 
 <td style="padding-top: 30px;" align="center"> 
@@ -1303,19 +1148,14 @@ td.outlookFloat{margin-left:40px;padding-right:0px !important;}
 </table> 
 <!--/Footer--> </td> 
 </tr>
-<tr class="mktoModule" id="persistentSpacerModulef9aa571b-4b1d-46ac-97be-7cef5c8aa8246f90ef04-1299-4b9b-822f-d52c13818f16"> 
-<td> 
-<!--Persistent Spacer--> 
-<table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" style="min-width:100%;"> 
-<!--[if gte mso 9]>
-<tr>
-<td>
-<table role="presentation" width="650" border="0" cellpadding="0" cellspacing="0" style="width:650px;">
-<![endif]--> 
-<tbody> 
-<tr style="white-space:nowrap; background-color:#F6F6F6;"> 
-<td height="25" style="white-space:normal;background-color:#F6F6F6; line-height:25px;font-size:25px;"> &nbsp; </td> 
-</tr> 
+
+
+
+
+
+
+<!--   =============================================================================================================  -->
+
 <!--[if gte mso 9]>
 </table>
 </td>
@@ -1323,22 +1163,22 @@ td.outlookFloat{margin-left:40px;padding-right:0px !important;}
 <![endif]--> 
 </tbody> 
 </table> 
+<!--/Title Text--> </td> 
+</tr>
+
+
+</tbody> 
+</table> 
 <!--/Persistent Spacer--> </td> 
 </tr>
-</table> </a></td> 
+
+
+
+</table> </td> 
 </tr> 
 <!--/Container--> 
 <!--Full Width Image for Gmail to render desktop version on mobile--> 
-<tr> 
-<td> 
-<table role="presentation" class="hide" id="gmailModule" width="100%" border="0" cellpadding="0" cellspacing="0" style="min-width:100%;"> 
-<tbody>
-<tr style="white-space:nowrap; background-color:#ffffff"> 
-<td height="1" class="hide" style="min-width:650px;opacity:0; font-size:0px;line-height:0px;"> <img height="1" src="#" style="min-width: 650px;max-height:0px; text-decoration: none; border: none; -ms-interpolation-mode: bicubic;"> </td> 
-</tr> 
-</tbody>
-</table> </td> 
-</tr> 
+
 <!--/Full Width Image for Gmail to render desktop version on mobile--> 
 </tbody>
 </table> 
@@ -1346,5 +1186,5 @@ td.outlookFloat{margin-left:40px;padding-right:0px !important;}
 </tr> 
 </tbody>
 </table>  
-</body>    
+     </body>    
 </html>
